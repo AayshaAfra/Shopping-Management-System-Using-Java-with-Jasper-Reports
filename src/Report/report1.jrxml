@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d9711dbf-d7c4-45a4-956d-74a9eb485cf0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM bill;]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CntactNo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Total" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="68" splitType="Stretch">
+			<staticText>
+				<reportElement x="152" y="13" width="294" height="44" uuid="af54b5f5-1b58-40ff-b4ed-60833f8aaefc"/>
+				<textElement>
+					<font fontName="Bell MT" size="36"/>
+				</textElement>
+				<text><![CDATA[Customer Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="8" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="16" width="44" height="32" uuid="92facb09-7b56-45aa-b2e2-480ab28cc84c"/>
+				<textElement>
+					<font fontName="Bell MT" size="24"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="16" width="72" height="32" uuid="c034ee8b-43c5-4eb1-a237-a27f7ee135da"/>
+				<textElement>
+					<font fontName="Bell MT" size="24"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="16" width="114" height="32" uuid="10084f79-7a67-4cf6-b505-c8be7a3fb175"/>
+				<textElement>
+					<font fontName="Bell MT" size="24"/>
+				</textElement>
+				<text><![CDATA[ContactNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="16" width="81" height="32" uuid="45255c6f-1660-4e52-8420-9a8beb4481a5"/>
+				<textElement>
+					<font fontName="Bell MT" size="24"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="16" width="72" height="32" uuid="8fa272bd-fb4a-44a2-88e6-a8e1ece710c6"/>
+				<textElement>
+					<font fontName="Bell MT" size="24"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="16" width="69" height="32" uuid="d112ad61-df37-496f-9ef7-0f40017706ba"/>
+				<textElement>
+					<font fontName="Bell MT" size="24"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="13" width="44" height="20" uuid="c01710d5-1f72-4575-88a0-123d1437c35a"/>
+				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="59" y="13" width="80" height="20" uuid="3697c7df-a2ea-4082-b312-3395cbc60c34"/>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="164" y="13" width="87" height="20" uuid="1184a08d-63f1-4256-85c1-a7437c3ed49d"/>
+				<textFieldExpression><![CDATA[$F{CntactNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="277" y="13" width="100" height="20" uuid="8485c5ea-b82c-4643-91df-2da0bea6fbe7"/>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="389" y="13" width="83" height="20" uuid="d8181992-8538-46d0-a522-fb585ffa3d75"/>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="486" y="13" width="56" height="20" uuid="b5a0248d-e285-41da-ac95-1d48093d2d12"/>
+				<textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="10" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="10" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="6" splitType="Stretch"/>
+	</summary>
+</jasperReport>

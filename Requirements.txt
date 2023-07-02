@@ -1,0 +1,9 @@
+1st Step: Use Xampp or WampServer and import the database "shop_db" into PHPMyAdmin
+
+2nd Step: Change Location path in the necessary places
+
+3rd Step: Using Netbeans Run the project 
+
+4th Step: Use jar Files in the Library and use the mysql-connector-java-8.0.30 (Import them to the Libraries)
+
+Enjoy & Have a great day!
